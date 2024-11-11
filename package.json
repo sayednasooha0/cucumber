@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
+    "cypress": "^13.15.2"
+  },
+  "name": "new-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,12 @@
+require("cypress-xpath")
+require("cypress-file-upload")
+describe("example",function(){
+    before(function(){
+        cy.visit("https://the-internet.herokuapp.com/upload")
+    })
+it("file",()=>{
+    cy.xpath("//input[@id='file-upload']").attachFile("1.png")
+    cy.xpath("//input[@id='file-submit']").click()
+    cy.xpath("//div[@id='uploaded-files']").contains("1.png")
+})
+})

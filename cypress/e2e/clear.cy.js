@@ -1,0 +1,9 @@
+describe("clear",()=>{
+    it("action",()=>{
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    cy.get("input[placeholder='Username']").type("Admin1")
+    cy.get("input[placeholder='Username']").should("have.value","Admin1")
+    cy.get("input[placeholder='Username']").clear()
+    cy.get("input[placeholder='Username']").type("Admin").should("have.value","Admin").and("not.contain","sayed")
+})
+})
